@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        
+        <div class="navbar">
+            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="about.html"><i class="fa fa-fw fa-home"></i> About</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope "></i> Contact</a>
+            <a href="login.html"><i class="fa fa-fw fa-user "></i> Login</a>
+          </div>
+        <!-- <form  id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form> -->
+    </header>
+
+
+    <form action="#" method="post">
+        <div class="imgcontainer">
+          <img src="Assets/Images/MOVIES4U.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#22254b">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+
+    <footer class="page-footer">
+        <p>
+            <span class="footer-logo">Movies4U</span> made by
+            <a>Abhishek, Jiya, & Ashutosh</a>
+          </p>
+        </footer>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyBAOIhT6Tfp_-jSKJPRcFj8a9cPiXGANb4",
+              authDomain: "movies4u-60f39.firebaseapp.com",
+              projectId: "movies4u-60f39",
+              storageBucket: "movies4u-60f39.appspot.com",
+              messagingSenderId: "554088364243",
+              appId: "1:554088364243:web:b0fd3f691c11ca4fc4bc26",
+              measurementId: "G-8L8L2V3ZMQ"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+</body>
+</html>
