@@ -212,27 +212,26 @@ main{
     margin-top: 5px;
 }
 /* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+.overlay { 
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
   }
   
   /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
-    top: 10%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    top: 10%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
   }
   
   /* The navigation links inside the overlay */
@@ -241,8 +240,8 @@ main{
     text-decoration: none;
     font-size: 36px;
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block; 
+    transition: 0.3s; 
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -339,18 +338,19 @@ body {
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 10px;
-    width: auto;
+    width: 75%;
+    
   }
   
   .about-section {
-    padding: 70px;
+    padding: 10px 150px;
     text-align: center;
-    /* background-color: #474e5d; */
     color: white;
   }
   
-  .container {
+  .abt-container {
     padding: 0 16px;
+    text-align: center;
   }
   
   .container::after, .row::after {
@@ -412,6 +412,11 @@ body {
 
   h1,h2{
     color: white;
+  }
+  .img-cont{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
   }
 
 /* ***********************************************LOGIN PAGE************************************************  */
@@ -504,5 +509,5 @@ input[type=submit]:hover {
   border-radius: 5px;
   color: white;
   background-color: var(--primary-color);
-  padding: 200px;
+  padding: 50px 400px;
 }
