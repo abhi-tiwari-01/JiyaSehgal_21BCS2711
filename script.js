@@ -1,4 +1,4 @@
-const API_KEY = 'api_key=1cf50e6248dc270629e802686245c2c8';
+const API_KEY = 'api_key=c646e2e889e9280b3d4c9fce64e99803';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
@@ -265,12 +265,9 @@ function openNav(movie) {
           var content = `
         <h1 class="no-results">${movie.original_title}</h1>
         <br/>
-        
         ${embed.join('')}
         <br/>
-
-        <div class="dots">${dots.join('')}</div>
-        
+        <div class="dots">${dots.join('')}</div>  
         `;
           overlayContent.innerHTML = content;
           activeSlide = 0;
@@ -323,7 +320,6 @@ leftArrow.addEventListener('click', () => {
   } else {
     activeSlide = totalVideos - 1;
   }
-
   showVideos();
 });
 
@@ -338,11 +334,11 @@ rightArrow.addEventListener('click', () => {
 
 function getColor(vote) {
   if (vote >= 8) {
-    return 'green';
+    return 'blue';
   } else if (vote >= 5) {
-    return 'orange';
-  } else {
     return 'red';
+  } else {
+    return 'yellow';
   }
 }
 
